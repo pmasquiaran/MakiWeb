@@ -1,0 +1,27 @@
+#
+# robots.txt para tu sitio web.
+#
+
+#
+# Primero el contenido adjunto.
+#
+User-Agent: *
+Allow: /blog/
+Allow: /images/
+Allow: /portafolio/
+Disallow: /css/
+Disallow: /js/
+Disallow: /php/
+
+#
+# Sitemap permitido.
+#
+Sitemap: https://osborn.cl/pmasquiaran/sitemap.xml
+
+#
+# A partir de aquí es opcional pero recomendado.
+#
+# Lista de bots que suelen respetar el robots.txt pero rara
+# vez hacen un buen uso del sitio y abusan bastante.
+# Añadir al gusto del consumidor.
+#
