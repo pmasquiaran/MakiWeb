@@ -271,94 +271,45 @@ gtag('config', 'G-0ZHFNYB7JX');
     function sendMail() {
 
         $('#formulario').submit(function(evento) {
-            evento.preventDefault();
-            var $form = $(this);
-            $.post($form.attr("action"), $form.serialize()).then(function() {
-              alert("Thank you!");
-            });
-        });
-/*
-        $('.contact-form2 [type="submit"]').on('click', function () {
 
-            var emailVal = $('#contact-email').val();
+            evento.preventDefault();
+
+            var emailVal = $('#email').val();
 
             if (isValidEmailAddress(emailVal)) {
-                var params = {
-                    'action': 'SendMessage',
-                    'name': $('#name').val(),
-                    'email': $('#contact-email').val(),
-                    'subject': $('#subject').val(),
-                    'message': $('#message').val()
-                };
-                $.ajax({
-                    type: "POST",
-                    url: "https://osborn.cl/pmasquiaran/php/sendMail.php",
-                    data: params,
-                    beforeSend: function(xhr) {
-                        $('#alerta').css({'visibility':'visible'});
-                    },
-                    success: function (response) {
-                        if (response) {
-                            var responseObj = $.parseJSON(response);
-                            if (responseObj.ResponseData) {
-                                gtag('event', 'enviar', { 'event_category': 'Contacto', 'event_label': $('#subject').val()});
-                                $('input[name=your-name]').val('');
-                                $('input[name=your-email]').val('');
-                                $('input[name=your-subject]').val('');
-                                $('textarea').val('');
-                                $('input[name=your-name]').focus();
-                                $('#alerta').text(responseObj.ResponseData).fadeIn(900);
-                                setTimeout(function(){
-                                    $('#alerta').fadeOut(900, function(){
-                                        $(this).empty();
-                                    });
-                                }, 3600);
-                            }
-                        }
-                    },
-                    error: function (xhr, ajaxOptions, thrownError) {
-                        //xhr.status : 404, 303, 501...
-                        var error = null;
-                        switch (xhr.status)
-                        {
-                            case "301":
-                                error = "¡Error de redirección!";
-                                break;
-                            case "307":
-                                error = "¡Error, redirección temporal del servidor!";
-                                break;
-                            case "400":
-                                error = "¡Solicitud incorrecta!";
-                                break;
-                            case "404":
-                                error = "¡Página no encontrada!";
-                                break;
-                            case "500":
-                                error = "¡El servidor actualmente no está disponible!";
-                                break;
-                            default:
-                                error = "Error inesperado. Vuelve a intentarlo más tarde.";
-                        }
-                        if (error) {
-                            $('#alerta').text(error).fadeIn(900);
-                            setTimeout(function(){
-                                $('#alerta').fadeOut(900, function(){
-                                    $(this).empty();
-                                });
-                            }, 3600);
-                        }
-                    }
+
+                var formulario = $(this);
+
+                $.post(formulario.attr("action"), formulario.serialize()).then(function() {
+
+                    //gtag('event', 'enviar', { 'event_category': 'Contacto', 'event_label': $('#asunto').val()});
+
+                    $('#alerta').text('Tu mensaje fue enviado correctamente.').fadeIn(900);
+                    $('input[name=nombre]').val('');
+                    $('input[name=email]').val('');
+                    $('input[name=asunto]').val('');
+                    $('textarea').val('');
+                    $('input[name=nombre]').focus();
+                    setTimeout(function(){
+                        $('#alerta').fadeOut(900, function(){
+                            $(this).empty();
+                        });
+                    }, 4800);
+
                 });
+
             } else {
                 $('#alerta').text('Tu email no tiene un formato válido.').fadeIn(900);
+                $('input[name=email]').focus();
                 setTimeout(function() {
                     $('#alerta').fadeOut(900, function(){
                         $(this).empty();
                     });
-                }, 3600);
+                }, 4800);
             }
 
-        });*/
+        });
+
     }
 
 }(jQuery));
