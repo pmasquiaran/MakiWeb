@@ -300,6 +300,7 @@ gtag('config', 'G-0ZHFNYB7JX');
 
             } else {
                 $('#alerta').text('Tu email no tiene un formato válido.').fadeIn(900);
+                $('input[name=email]').val('');
                 $('input[name=email]').focus();
                 setTimeout(function() {
                     $('#alerta').fadeOut(900, function(){
