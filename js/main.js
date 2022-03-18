@@ -282,7 +282,7 @@ gtag('config', 'G-0ZHFNYB7JX');
 
                 $.post(formulario.attr("action"), formulario.serialize()).then(function() {
 
-                    //gtag('event', 'enviar', { 'event_category': 'Contacto', 'event_label': $('#asunto').val()});
+                    gtag('event', 'enviar', { 'event_category': 'Contacto', 'event_label': $('#asunto').val()});
 
                     $('#alerta').text('Tu mensaje fue enviado correctamente.').fadeIn(900);
                     $('input[name=nombre]').val('');
