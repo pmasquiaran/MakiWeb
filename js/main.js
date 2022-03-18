@@ -2,7 +2,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'UA-176939797-1'); 
+gtag('config', 'G-0ZHFNYB7JX'); 
 
 (function ($) {
     "use strict";
@@ -269,7 +269,16 @@ gtag('config', 'UA-176939797-1');
     }
 
     function sendMail() {
-        $('.contact-form [type="submit"]').on('click', function () {
+
+        $('#formulario').submit(function(evento) {
+            evento.preventDefault();
+            var $form = $(this);
+            $.post($form.attr("action"), $form.serialize()).then(function() {
+              alert("Thank you!");
+            });
+        });
+/*
+        $('.contact-form2 [type="submit"]').on('click', function () {
 
             var emailVal = $('#contact-email').val();
 
@@ -349,7 +358,7 @@ gtag('config', 'UA-176939797-1');
                 }, 3600);
             }
 
-        });
+        });*/
     }
 
 }(jQuery));
