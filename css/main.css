@@ -2,7 +2,7 @@
     Theme Name:  Maki Quorra (Ukko base)
     Theme URI:   http://www.osborn.cl/
     Author:      Pablo Masquiarán
-    Author URI:  http://www.osborn.cl/pmasquiaran/
+    Author URI:  http://www.pmasquiaran.dev/
     License:     LGPLv3 (Licencia Pública General Reducida de GNU)
     License URI: https://www.gnu.org/licenses/lgpl-3.0-standalone.html
     Paleta: #0b0e13 #e7fdfa #00feff #8d0055 #feff32
@@ -727,7 +727,7 @@ img.block-right {
 .serv-link-cover ul a {
     color: #e7fdfa;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     position: relative;
     display: inline-block;
 }
@@ -900,6 +900,8 @@ img.block-right {
 }
 
 .imagen {
+    min-height: 220px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -1618,6 +1620,10 @@ p.contact-submit-holder span {
         margin: 0 0 40px 40px;
     }
 
+    .grid-item img {
+        height: 100%;
+        width: auto;
+    }
     .skills-history li div {
         padding: 0 0px 0 60px;
     }
@@ -1634,6 +1640,7 @@ p.contact-submit-holder span {
 
     .serv-link-cover ul img {
         height: 160px;
+        width: 160px;
     }
 
 }
@@ -1702,7 +1709,7 @@ p.contact-submit-holder span {
     }
 
     .serv-link-cover ul {
-        padding: 40px 50px;
+        padding: 40px 30px;
     }
 
     .serv-block-wrap {
@@ -1792,7 +1799,6 @@ p.contact-submit-holder span {
 
     .serv-link-cover ul li + li {
         margin-left: 0;
-        margin-top: 30px;
     }
 
     .serv-block-wrap .serv-block-item {

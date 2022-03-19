@@ -6,7 +6,6 @@
 # Primero el contenido adjunto.
 #
 User-Agent: *
-Allow: /blog/
 Allow: /images/
 Allow: /portafolio/
 Disallow: /css/
@@ -16,7 +15,7 @@ Disallow: /php/
 #
 # Sitemap permitido.
 #
-Sitemap: https://osborn.cl/pmasquiaran/sitemap.xml
+Sitemap: https://pmasquiaran.dev/sitemap.xml
 
 #
 # A partir de aquí es opcional pero recomendado.
