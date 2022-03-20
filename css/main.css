@@ -1183,6 +1183,7 @@ div.pp_default .pp_description {
 
 .skills-history li div p {
     color: #feff32;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
@@ -1195,8 +1196,10 @@ div.pp_default .pp_description {
     color: #8d0055;
     font-weight: 600;
     letter-spacing: 3px;
-    text-indent: 10px;
     text-transform: uppercase;
+    padding: 0px 10px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .skills-history li div dl dd {
@@ -1620,7 +1623,7 @@ p.contact-submit-holder span {
         margin: 0 0 40px 40px;
     }
 
-    .grid-item img {
+    .p-one-half .grid-item img {
         height: 100%;
         width: auto;
     }
@@ -1754,10 +1757,6 @@ p.contact-submit-holder span {
 
     .skills-history li .date {
         font-size: 48px;
-    }
-
-    .skills-history li div p {
-        margin-bottom: 0px;
     }
 
     .skills-progress li {
