@@ -3,10 +3,13 @@
   [headers.values]
     Feature-Policy = "camera 'none'; display-capture 'none'; document-domain 'none'; geolocation 'none'; microphone 'none'; payment 'none'; usb 'none'"
     Permissions-Policy = "geolocation=(), microphone=(), midi=(), sync-xhr=() ,accelerometer=(), gyroscope=(), magnetometer=(), camera=(), fullscreen=(self)'"
+    Referrer-Policy = "no-referrer-when-downgrade"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-Permitted-Cross-Domain-Policies = "master-only"
     X-XSS-Protection = "1; mode=block"
+
+    Content-Security-Policy = "default-src 'self'; script-src 'unsafe-eval' 'unsafe-inline' 'self' https://cdnjs.cloudflare.com/ https://www.gstatic.com/recaptcha/releases/ https://www.googletagmanager.com/gtag/; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com/g/; font-src 'self' https://fonts.gstatic.com; form-action 'self'; frame-src 'self' https://cdnjs.cloudflare.com/; img-src 'self'; media-src 'self' data: *;"
 
 [[headers]]
   for = "/images/*"
