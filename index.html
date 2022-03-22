@@ -45,19 +45,6 @@
 
         -->
 
-        <!-- Critical Path CSS :
-        ================================================================================ -->
-        <style>
-            html{box-sizing:border-box;-ms-overflow-style:scrollbar;overflow-x:hidden}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}
-        </style>
-
-        <!-- Área de compatibilidad HTML5 :
-        ================================================================================ -->
-        <!--[if lt IE 9]>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
         <!-- Área de íconos favoritos :
         ================================================================================ -->
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
@@ -83,21 +70,32 @@
         <meta property="og:site_name" content="Pablo Masquiarán">
         <meta property="og:url" content="https://pmasquiaran.dev/">
 
-    </head>
+        <!-- Critical Path CSS :
+        ================================================================================ -->
+        <style>
+            html{box-sizing:border-box;-ms-overflow-style:scrollbar;overflow-x:hidden}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}
+        </style>
 
-    <body class="one-page">
+        <!-- Área de compatibilidad HTML5 :
+        ================================================================================ -->
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
         <!-- Área de estilo CSS :
         ================================================================================ -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Caveat&family=Inconsolata:wght@200;400;600;800&family=Michroma&display=swap"> 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-        <link rel="preload" as="style" href="css/main.min.css">
-        <link rel="stylesheet" href="css/main.min.css">
-        <link rel="stylesheet" media="all" href="css/main.min.css">
+        <link rel="preload" as="style" href="css/main.css" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+
+    </head>
+
+    <body class="one-page">
 
         <div class="barra-maki"></div>
 
@@ -201,7 +199,6 @@
 
                     <div class="serv-link-cover block-right" data-jarallax-element="0 40">
                         <ul>
-                            <li><a href="maki.pdf" rel="noreferrer" role="link document" target="_blank" aria-label="DESCARGA MI CV">DESCARGA MI CV</a></li>
                             <li><a href="maki.vcf" rel="noreferrer" role="link" target="_blank" aria-label="DESCARGA MI VCARD">DESCARGA MI VCARD</a></li>
                             <li><img class="lazyload" src="maki.svg" data-src="maki.svg" alt="Código QR con vcard de Pablo Masquiarán" aria-label="Código QR con vcard de Pablo Masquiarán"></li>
                         </ul>
@@ -544,12 +541,12 @@
         <!-- Área de código JS :
         ================================================================================ -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script defer src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax.min.js"></script>
-        <script defer src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax-element.min.js"></script>
-        <script async src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
-        <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-        <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-        <script async src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax-element.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
         <script src="js/main.min.js"></script>
 
     </body>
