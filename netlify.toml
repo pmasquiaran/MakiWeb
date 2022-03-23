@@ -5,7 +5,7 @@
     Access-Control-Allow-Headers = "Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method"
     Access-Control-Allow-Methods = "GET, POST, OPTIONS"
     Access-Control-Allow-Origin = "https://pmasquiaran.dev"
-
+    #Cache-Control = "public, max-age=604800"
     Content-Security-Policy = "default-src 'self'; script-src 'unsafe-inline' 'self' https://www.googletagmanager.com/gtag/ https://cdnjs.cloudflare.com/; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/ https://cdnjs.cloudflare.com/; object-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com/g/; font-src 'self' https://fonts.gstatic.com/; form-action 'self'; frame-src 'self'; img-src 'self'; media-src 'self' data: *;"
 
     Permissions-Policy = "geolocation=(), microphone=(), midi=(), sync-xhr=() ,accelerometer=(), gyroscope=(), magnetometer=(), camera=(), fullscreen=(self)"
