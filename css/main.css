@@ -8,6 +8,27 @@
     Paleta: #0b0e13 #e7fdfa #00feff #8d0055 #feff32
     ================================================================================================ */
 
+/*------------------------------------------------------------------
+
+[Tabla de contenidos]
+0.  Bootstrap Grid
+1.  Clear CSS
+2.  Global CSS
+3.  Header / Menu CSS
+4.  Home Section CSS 
+5.  About Section CSS
+6.  Portfolio Section CSS
+7.  Skills Section CSS
+8.  Contact Section CSS
+9.  Glith Background CSS
+10. Responsive CSS
+
+-------------------------------------------------------------------*/
+
+/* ===================================
+    0. Bootstrap Grid
+====================================== */
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -55,24 +76,6 @@ html {
     max-width: 1140px;
   }
 }
-
-
-
-/*------------------------------------------------------------------
-
-[Table of contents]
-1.  Clear CSS
-2.  Global CSS
-3.  Header / Menu CSS
-4.  Home Section CSS 
-5.  About Section CSS
-6.  Portfolio Section CSS
-7.  Skills Section CSS
-8.  Contact Section CSS
-9.  Glith Background CSS
-10. Responsive CSS
-
--------------------------------------------------------------------*/
 
 
 
@@ -193,102 +196,6 @@ input:focus, textarea:focus
     background: #0b0e13;
 }
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline: none;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
-}
-
-nav ul,ul,ol {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    outline: none;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-ins {
-    background-color:#e7fdfa;
-    color:#0b0e13;
-    text-decoration:none;
-}
-
-mark {
-    background-color:#e7fdfa;
-    color:#0b0e13; 
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #feff32;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-input:focus, textarea:focus
-{
-    outline: none;
-}
 body {
     background-color: #0b0e13;
     color: #e7fdfa;
