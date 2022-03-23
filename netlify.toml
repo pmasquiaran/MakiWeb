@@ -5,7 +5,7 @@
     Access-Control-Allow-Headers = "Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method"
     Access-Control-Allow-Methods = "GET, POST, OPTIONS"
     Access-Control-Allow-Origin = "https://pmasquiaran.dev"
-    #Cache-Control = "public, max-age=604800"
+  Cache-Control = "public, max-age=0"
     Content-Security-Policy = "base-uri 'self'; connect-src 'self' https://www.google-analytics.com/; default-src 'self'; font-src 'self' https://fonts.gstatic.com/; img-src 'self'; media-src 'self' data: *; script-src 'self' https://www.googletagmanager.com/gtag/ https://cdnjs.cloudflare.com/; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/ https://cdnjs.cloudflare.com/; form-action 'self';"
     Permissions-Policy = "geolocation=(), microphone=(), midi=(), sync-xhr=() ,accelerometer=(), gyroscope=(), magnetometer=(), camera=(), fullscreen=(self)"
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
@@ -34,7 +34,7 @@
 [[headers]]
   for = "/css/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=0"
 
 [[headers]]
   for = "/js/*.js"
