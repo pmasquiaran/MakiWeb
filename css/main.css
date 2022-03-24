@@ -602,6 +602,7 @@ img.block-right {
 }
 
 #portada .main-photo {
+    aspect-ratio:  1;
     max-height: calc(100vh - 170px);
     width: 536px;
     object-fit: cover;
