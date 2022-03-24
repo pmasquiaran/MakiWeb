@@ -93,8 +93,6 @@
         <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Caveat&family=Michroma&family=Inconsolata:wght@400;600;800&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-        <link rel="preload" as="style" href="css/main.min.css">
-        <link rel="stylesheet" href="css/main.min.css">
 
         <div class="barra-maki"></div>
 
@@ -524,6 +522,16 @@
                 <li class="glitch-item"></li>
             </ul>
         </div>
+
+<script>var cb = function() {
+var l = document.createElement('link'); l.rel = 'stylesheet';
+l.href = 'PATH_TO_COMBINED_CSS_FILE';
+var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);</script>
 
         <!-- Global site tag (gtag.js) - Google Analytics :
         ================================================================================ -->
