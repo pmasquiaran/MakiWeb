@@ -5,7 +5,7 @@
     Access-Control-Allow-Headers = "Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method"
     Access-Control-Allow-Methods = "GET, POST, OPTIONS"
     Access-Control-Allow-Origin = "https://pmasquiaran.dev"
-    Cache-Control = "public, max-age=0"
+    Cache-Control = "public, max-age=604800"
     Content-Security-Policy = "upgrade-insecure-requests"
     Permissions-Policy = "geolocation=(), microphone=(), midi=(), sync-xhr=() ,accelerometer=(), gyroscope=(), magnetometer=(), camera=(), fullscreen=(self)"
     Referrer-Policy = "no-referrer-when-downgrade"
@@ -32,11 +32,11 @@
     Cache-Control = "public, max-age=157680000"
 
 [[headers]]
-  for = "/css/*.css"
+  for = "/css/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "/js/*.js"
+  for = "/js/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
