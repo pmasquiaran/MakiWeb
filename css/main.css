@@ -241,13 +241,16 @@ a:hover {
     background:      -o-linear-gradient(90deg, #0b0e13 20%, #00feff 20%, #00feff 40%, #8d0055 40%, #8d0055 60%, #feff32 60%, #feff32 80%, #e7fdfa 80%); /* Opera 11.10+ */
     background:         linear-gradient(90deg, #0b0e13 20%, #00feff 20%, #00feff 40%, #8d0055 40%, #8d0055 60%, #feff32 60%, #feff32 80%, #e7fdfa 80%); /* W3C */
     height: 5px;
+    left: 0;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 10;
 }
 
 .container {
     position: relative;
+    top:5px;
     z-index: 2;
 }
 
