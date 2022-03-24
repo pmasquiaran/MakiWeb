@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="ltr" content="es-ES" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<html dir="ltr" content="es-ES" lang="es-ES" prefix="og: https://ogp.me/ns#">
 
     <head>
 
@@ -73,8 +73,8 @@
         <!-- Área de compatibilidad HTML5 :
         ================================================================================ -->
         <!--[if lt IE 9]>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
         <!-- Critical Path CSS :
@@ -85,12 +85,23 @@
 
     <body class="one-page">
 
+        <!-- Área de estilo CSS :
+        ================================================================================ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Caveat&family=Michroma&family=Inconsolata:wght@400;600;800&display=swap">
+        <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Caveat&family=Michroma&family=Inconsolata:wght@400;600;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+        <link rel="preload" as="style" href="css/main.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+
         <div class="barra-maki"></div>
 
         <!-- Área de Update Browse Happy :
         ================================================================================ -->
         <!--[if lt IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="doc-loader" aria-hidden="true"></div>
@@ -126,9 +137,9 @@
                         </nav>
                     </div>
                     <ul class="nav-soc">
-                        <li><a href="https://linkedin.com/in/pmasquiaran/" rel="noreferrer" role="link" title="Mi cuenta en LinkedIn" aria-label="Mi cuenta en LinkedIn" target="_blank">IN.</a></li>
                         <li><a href="https://github.com/pmasquiaran/" rel="noreferrer" role="link" title="Mi cuenta en GitHub" aria-label="Mi cuenta en GitHub" target="_blank">GH.</a></li>
                         <li><a href="https://twitter.com/pmasquiaran/" rel="noreferrer" role="link" title="Mi cuenta en Twitter" aria-label="Mi cuenta en Twitter" target="_blank">TW.</a></li>
+                        <li><a href="https://linkedin.com/in/pmasquiaran/" rel="noreferrer" role="link" title="Mi cuenta en LinkedIn" aria-label="Mi cuenta en LinkedIn" target="_blank">IN.</a></li>
                     </ul>
                 </div>
                 <!-- =============== HEADER END =============== -->
@@ -485,18 +496,10 @@
 
                     <div id="contact-wrapper" class="relative block-right"> 
                         <form class="contact-form" data-netlify="true" id="formulario" method="POST" name="formulario" role="form">
-                            <p>
-                                <input id="nombre" type="text" name="nombre" placeholder="NOMBRE" aria-label="NOMBRE" aria-required="true">
-                            </p>
-                            <p>                                   
-                                <input id="email" type="email" name="email" placeholder="EMAIL" aria-label="EMAIL" aria-required="true">
-                            </p>
-                            <p>
-                                <input id="asunto" type="text" name="asunto" placeholder="ASUNTO" aria-label="ASUNTO" aria-required="true">
-                            </p>
-                            <p>
-                                <textarea id="mensaje" name="mensaje" placeholder="MENSAJE" aria-label="MENSAJE" aria-required="true" aria-multiline="true"></textarea>
-                            </p>
+                            <p><input id="nombre" type="text" name="nombre" placeholder="NOMBRE" aria-label="NOMBRE" aria-required="true"></p>
+                            <p><input id="email" type="email" name="email" placeholder="EMAIL" aria-label="EMAIL" aria-required="true"></p>
+                            <p><input id="asunto" type="text" name="asunto" placeholder="ASUNTO" aria-label="ASUNTO" aria-required="true"></p>
+                            <p><textarea id="mensaje" name="mensaje" placeholder="MENSAJE" aria-label="MENSAJE" aria-required="true" aria-multiline="true"></textarea></p>
                             <p class="contact-submit-holder">                                
                                 <input id="enviar" type="submit" value="ENVIAR" aria-label="ENVIAR">
                                 <span id="alerta" role="alert" aria-atomic="true"></span>
@@ -522,30 +525,19 @@
             </ul>
         </div>
 
-
-        <!-- Área de estilo CSS :
-        ================================================================================ -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Caveat&family=Inconsolata:wght@200;400;600;800&family=Michroma&display=swap">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-        <link rel="preload" as="style" href="css/main.min.css">
-        <link rel="stylesheet" href="css/main.min.css">
-
         <!-- Global site tag (gtag.js) - Google Analytics :
         ================================================================================ -->
-        <script async src="//www.googletagmanager.com/gtag/js?id=G-0ZHFNYB7JX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZHFNYB7JX"></script>
 
         <!-- Área de código JS :
         ================================================================================ -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax-element.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.2/jarallax-element.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
         <script src="js/main.min.js"></script>
 
     </body>
