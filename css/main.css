@@ -49,6 +49,7 @@ html {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
 }
@@ -602,7 +603,7 @@ img.block-right {
 }
 
 #portada .main-photo {
-    aspect-ratio:  1;
+    aspect-ratio: 1;
     max-height: calc(100vh - 170px);
     width: 536px;
     object-fit: cover;
