@@ -21,7 +21,6 @@ gtag('config', 'G-0ZHFNYB7JX');
         skillFill();
         portfolioItemContentLoadOnClick();
         sendMail();
-        imageSliderSetUp();
         setHash();
         $('.doc-loader').fadeOut();
     });
@@ -221,39 +220,6 @@ gtag('config', 'G-0ZHFNYB7JX');
             }
         });
         return false;
-    }
-
-    function imageSliderSetUp() {
-        $(".image-slider").each(function () {
-            var speed_value = $(this).data('speed');
-            var auto_value = $(this).data('auto');
-            var hover_pause = $(this).data('hover');
-            if (auto_value === true) {
-                $(this).owlCarousel({
-                    loop: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: auto_value,
-                    autoplayHoverPause: hover_pause,
-                    autoplayTimeout: speed_value,
-                    responsiveClass: true,
-                    items: 1
-                });
-                $(this).on('mouseleave', function () {
-                    $(this).trigger('stop.owl.autoplay');
-                    $(this).trigger('play.owl.autoplay', [auto_value]);
-                });
-            } else {
-                $(this).owlCarousel({
-                    loop: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: false,
-                    responsiveClass: true,
-                    items: 1
-                });
-            }
-        });
     }
 
     function isValidEmailAddress(emailAddress) {
