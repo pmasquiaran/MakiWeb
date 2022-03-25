@@ -203,7 +203,7 @@ body {
     background-color: #0b0e13;
     color: #e7fdfa;
     font-size: 15px;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-weight: 400;
     line-height: 2;
     min-width: 380px;
@@ -766,18 +766,6 @@ img.block-right {
     max-width: 670px;
 }
 
-.signature {
-    font-size: 2em;
-    font-family: 'Caveat', cursive;
-    line-height: 1;
-    margin: 100px 50px 0 0;
-    position: relative;
-    text-align: right;
-    -webkit-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-}
-
 
 /* ===================================
     6. Portfolio Section CSS
@@ -1254,7 +1242,7 @@ div.pp_default .pp_description {
     box-shadow: none;
     box-sizing: initial;
     color: #e7fdfa;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-size: 15px;
     letter-spacing: 3px;
     line-height: 30px;
@@ -1300,7 +1288,7 @@ p.contact-submit-holder span {
     text-decoration: none;
     background-color: #00feff;
     color: #0b0e13;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-weight: 800;
     text-align: center;
     letter-spacing: 5px;
@@ -1315,7 +1303,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::-webkit-input-placeholder, 
 .contact-form input[type=email]::-webkit-input-placeholder, 
 .contact-form textarea::-webkit-input-placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1326,7 +1314,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]:-ms-input-placeholder, 
 .contact-form input[type=email]:-ms-input-placeholder, 
 .contact-form textarea:-ms-input-placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1337,7 +1325,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::placeholder, 
 .contact-form input[type=email]::placeholder, 
 .contact-form textarea::placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
