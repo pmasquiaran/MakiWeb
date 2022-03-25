@@ -20,7 +20,6 @@ gtag('config', 'G-0ZHFNYB7JX');
         setMenu();
         skillFill();
         portfolioItemContentLoadOnClick();
-        setParallax();
         sendMail();
         imageSliderSetUp();
         setHash();
