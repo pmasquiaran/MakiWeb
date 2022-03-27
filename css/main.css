@@ -18,10 +18,11 @@
 4.  Home Section CSS 
 5.  About Section CSS
 6.  Portfolio Section CSS
-7.  Contact Section CSS
-8.  Glith Background CSS
-9.  Responsive CSS
-10. Animate CSS
+7.  Skills Section CSS
+8.  Contact Section CSS
+9.  Glith Background CSS
+10. Responsive CSS
+11. Animate CSS
 
 -------------------------------------------------------------------*/
 
@@ -203,7 +204,7 @@ body {
     background-color: #0b0e13;
     color: #e7fdfa;
     font-size: 15px;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-weight: 400;
     line-height: 2;
     min-width: 380px;
@@ -1079,7 +1080,137 @@ div.pp_default .pp_description {
 
 
 /* ===================================
-    7. Contact Section CSS
+    7. Skills Section CSS
+====================================== */
+
+.skills-history {
+    background-color: rgba(5,13,16,.9);
+    color: #e7fdfa;
+    margin-top: 40px;
+    padding: 60px 60px 60px 80px;
+}
+
+.skills-history li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.skills-history li:before {
+    content: '';
+    position: absolute;
+    left: 28%;
+    top: 0;
+    background-color: #e7fdfa;
+    width: 3px;
+    height: 100%;
+}
+
+.skills-history li + li {
+    padding-top: 30px;
+}
+
+.skills-history li .date {
+    flex: 0 0 28%;
+    max-width: 28%;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 30px;
+    transition: .35s ease-out;
+}
+
+.skills-history li:hover .date {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    color: #e7fdfa;
+}
+
+.skills-history li div {
+    flex: 0 0 72%;
+    max-width: 72%;
+    padding: 0 30px 0 60px;
+    cursor: default;
+    transition: .35s ease-out;
+    margin-bottom: 0;
+}
+
+.skills-history li div p {
+    color: #feff32;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.skills-history li div p strong {
+    color: #00feff;
+}
+
+.skills-history li div dl dt {
+    background-color: #e7fdfa;
+    color: #8d0055;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.skills-history li div dl dd {
+    line-height: 1.5;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.skills-history li div dl dd::before {
+    content: '>_';
+    left: -30px;
+    position: absolute;
+}
+
+.skills-history li:hover div {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+}
+
+.skills-progress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-top: 60px;
+}
+
+.skills-progress li {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 35px);
+    margin-bottom: 22px;
+}
+
+.skills-progress .name {
+    line-height: 28px;
+    letter-spacing: 3px;    
+    width: 37%;
+    padding-right: 30px;
+}
+
+.skills-progress .skill {
+    width: 100%;
+    height: 10px;
+    background-color: #ffd2d3;
+    width: 63%;
+}
+
+.skills-progress .skill-fill {
+    width: 10%;
+    height: 10px;
+    background-color: #8d0055;
+    transition: width .7s;
+}
+
+
+/* ===================================
+    8. Contact Section CSS
 ====================================== */
 
 .contact-form {
@@ -1112,7 +1243,7 @@ div.pp_default .pp_description {
     box-shadow: none;
     box-sizing: initial;
     color: #e7fdfa;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-size: 15px;
     letter-spacing: 3px;
     line-height: 30px;
@@ -1158,7 +1289,7 @@ p.contact-submit-holder span {
     text-decoration: none;
     background-color: #00feff;
     color: #0b0e13;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     font-weight: 800;
     text-align: center;
     letter-spacing: 5px;
@@ -1173,7 +1304,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::-webkit-input-placeholder, 
 .contact-form input[type=email]::-webkit-input-placeholder, 
 .contact-form textarea::-webkit-input-placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1184,7 +1315,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]:-ms-input-placeholder, 
 .contact-form input[type=email]:-ms-input-placeholder, 
 .contact-form textarea:-ms-input-placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1195,7 +1326,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::placeholder, 
 .contact-form input[type=email]::placeholder, 
 .contact-form textarea::placeholder {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1206,7 +1337,7 @@ p.contact-submit-holder span {
 
 
 /* ===================================
-    8. Glith Background CSS
+    9. Glith Background CSS
 ====================================== */
 
 .image-glitch {
@@ -1275,7 +1406,7 @@ p.contact-submit-holder span {
 
 
 /* ===================================
-    9. Responsive CSS
+    10. Responsive CSS
 ====================================== */
 
 @media (max-width: 1366px) {
@@ -1449,6 +1580,9 @@ p.contact-submit-holder span {
         height: 100%;
         width: auto;
     }
+    .skills-history li div {
+        padding: 0 0px 0 60px;
+    }
 
     .serv-link-cover ul {
         display: block;
@@ -1570,6 +1704,18 @@ p.contact-submit-holder span {
         padding: 15px 15px 15px 20px;
     }
 
+    .skills-history {
+        padding: 30px 30px 30px 40px;
+    }
+
+    .skills-history li .date {
+        font-size: 48px;
+    }
+
+    .skills-progress li {
+        width: 100%;
+    }
+
     .contact-form {
         padding: 30px 30px 30px 40px;
     }
@@ -1645,6 +1791,47 @@ p.contact-submit-holder span {
     .grid-sizer, 
     .grid-item {
         width: 100% !important;
+    }
+
+    .skills-history li {
+        flex-wrap: wrap;
+    }
+
+    .skills-history li + li {
+        padding-top: 60px;
+    }
+
+    .skills-history li:before {
+        display: none;
+    }
+
+    .skills-history li div,
+    .skills-history li .date {
+        flex: 0 0 100%;
+        max-width: 100%;
+        transform: none !important;
+    }
+
+    .skills-history li div,
+    .skills-history li div p {
+        padding: 0;
+    }
+
+    .skills-history li .date {
+        margin-bottom: 20px;
+    }
+
+    .skills-progress li {
+        flex-wrap: wrap;
+    }
+
+    .skills-progress li .name {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .skills-progress li .skill {
+        width: 100%;
     }
 
 }
