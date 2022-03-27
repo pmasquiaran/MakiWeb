@@ -53,11 +53,10 @@
         <!-- Critical Path CSS :
         ================================================================================ -->
 
-
         <!-- Área de estilo CSS :
         ================================================================================ -->
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Michroma&family=Share+Tech+Mono&display=swap">
-        <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Michroma&family=Share+Tech+Mono&display=swap">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inconsolata:wght@400;600;800&display=swap">
+        <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inconsolata:wght@400;600;800&display=swap">
         <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/main.min.css">
         <noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
 
@@ -135,7 +134,7 @@
                 <!-- ================== PORTADA ================== -->
                 <section id="portada" class="section" data-titulo="Portada" role="banner">
                     <div class="container-wrap">                        
-                        <h1 class="entry-title">
+                        <h1 class="entry-title" data-jarallax-element="0 30">
                             <a href="https://pmasquiaran.dev/" role="link">
                                 <small>Hola, soy</small>
                                 <span>Pablo
@@ -143,7 +142,7 @@
                                 <small>Full Stack Developer</small>
                             </a>
                         </h1>
-                        <img class="main-photo block-right" src="images/photo.webp" alt="Foto de perfil de Pablo Masquiarán" height="960" width="540">
+                        <img class="main-photo block-right" data-jarallax-element="0 -30" src="images/photo.webp" alt="Foto de perfil de Pablo Masquiarán" height="960" width="540">
                     </div>
                 </section>
                 <!-- ================= PORTADA END ================= -->
@@ -155,7 +154,7 @@
                         Soy un cristiano-esposo-padre por convicción; y un programador-innovador-emprendedor por vocación que piensa en código fuente mezclado con rock. Siempre con un café en la mano.
                     </div>
 
-                    <div class="about-info">
+                    <div class="about-info" data-threshold="0 0" data-jarallax-element="40 0">
                         <ul>
                             <li>
                                 <strong>UBICACIÓN</strong>
@@ -182,7 +181,9 @@
                         <p><strong>¡Conoce el valor agregado de mi labor y descubre qué es lo que marca la diferencia!</strong></p>
                     </div>
 
-                    <div class="serv-link-cover block-right">
+                    <h3 class="signature">Pablo Masquiarán Díaz</h3>
+
+                    <div class="serv-link-cover block-right" data-jarallax-element="0 40">
                         <ul>
                             <li><a href="maki.vcf" rel="noreferrer" role="link" target="_blank" aria-label="DESCARGA MI VCARD">DESCARGA MI VCARD</a></li>
                             <li><img class="lazyload" src="maki.svg" data-src="maki.svg" alt="Código QR con vcard de Pablo Masquiarán" aria-label="Código QR con vcard de Pablo Masquiarán"></li>
@@ -521,6 +522,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
         <script src="js/main.min.js"></script>
 
     </body>
