@@ -204,7 +204,7 @@ body {
     background-color: #0b0e13;
     color: #e7fdfa;
     font-size: 15px;
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
     line-height: 2;
     min-width: 380px;
@@ -1243,7 +1243,7 @@ div.pp_default .pp_description {
     box-shadow: none;
     box-sizing: initial;
     color: #e7fdfa;
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-size: 15px;
     letter-spacing: 3px;
     line-height: 30px;
@@ -1289,7 +1289,7 @@ p.contact-submit-holder span {
     text-decoration: none;
     background-color: #00feff;
     color: #0b0e13;
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-weight: 800;
     text-align: center;
     letter-spacing: 5px;
@@ -1304,7 +1304,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::-webkit-input-placeholder, 
 .contact-form input[type=email]::-webkit-input-placeholder, 
 .contact-form textarea::-webkit-input-placeholder {
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1315,7 +1315,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]:-ms-input-placeholder, 
 .contact-form input[type=email]:-ms-input-placeholder, 
 .contact-form textarea:-ms-input-placeholder {
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
@@ -1326,7 +1326,7 @@ p.contact-submit-holder span {
 .contact-form input[type=text]::placeholder, 
 .contact-form input[type=email]::placeholder, 
 .contact-form textarea::placeholder {
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     color: #e7fdfa;
     font-weight: 400;
     font-size: 15px;
