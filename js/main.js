@@ -2,7 +2,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'G-E9J25TSRQ1'); 
+gtag('config', 'G-2BLQPYMTGL'); 
 
 (function ($) {
     "use strict";
@@ -291,3 +291,4 @@ gtag('config', 'G-E9J25TSRQ1');
     }
 
 }(jQuery));
+
