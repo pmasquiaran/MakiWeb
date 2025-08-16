@@ -5,8 +5,8 @@
 # TEAM
 
 	Programación backend/frontend: Pablo Masquiarán
-	Contact: pablo.masquiaran [at] osborn.cl
-	Site: www.osborn.cl/pmasquiaran
+	Contact: pablo.masquiaran [at] gmail.com
+	Site: pmasquiaran.dev
 	From: Talcahuano, Chile
 
 							
